@@ -19,15 +19,6 @@ services:
         networks:
             - web    
             - network-back
-#    php-cli:
-#        image: sharaths/magento-alpine:php-cli-7.1
-#        volumes:
-#            - ./public_html:/var/www/html:rw
-#        networks:
-#            - network-back
-#        links:
-#            - mysql
-#            - redis
 
     php-fpm:
         image: sharaths/magento-alpine:php-fpm-7.1
