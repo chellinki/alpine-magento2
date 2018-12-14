@@ -1,0 +1,31 @@
+# uncomment this line to get debug info with "docker logs":
+debug = true
+defaultEntryPoints = ["https","http"]
+# The syntax is somewhat esoteric so this is mostly copy-paste
+[entryPoints]
+[entryPoints.http]
+address = ":80"
+[entryPoints.http.redirect]
+entryPoint = "https"
+[entryPoints.https]
+address = ":443"
+[entryPoints.https.tls]
+[docker]
+endpoint = "unix:///var/run/docker.sock"
+domain = "local.com"
+watch = true
+exposedbydefault = false
+[acme]
+email = "test@test.com"
+storage = "/acme.json"
+# problems with let's encrypt? You can use this staging environment,
+# if you have to do a lot of trial and error:
+#caServer = "https://acme-staging-v02.api.letsencrypt.org/directory"
+entryPoint = "https"
+OnHostRule = true
+[acme.httpChallenge]
+entryPoint = "http"
+# enable web configuration backend.
+[web]
+# Web administration port, proxied in docker-compose.yml
+address = ":8080"
