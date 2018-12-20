@@ -34,7 +34,7 @@ cd alpine-magento2
 
 #### B) Setup the Traefik configurations and start the Traefik instance
 
-###### 1) Setup the Traefik configurations 
+##### 1) Setup the Traefik configurations 
 
 ```
 vi traefik.toml
@@ -52,7 +52,7 @@ vi docker-compose.yml
 
 > Save the file **docker-compose.yml** and exit from vi editor
 
-###### 2) Start the Traefik instance
+##### 2) Start the Traefik instance
 
 ```
 docker-compose -f traefik/docker-compose.yml up -d
@@ -60,7 +60,7 @@ docker-compose -f traefik/docker-compose.yml up -d
 
 #### C) Configure the sharaths.yml file and  Start the `Magento2 docker` instance
 
-###### 1) Configure the sharaths.yml file 
+##### 1) Configure the sharaths.yml file 
 
 ```
 vi magento2/sharaths.yml
@@ -70,7 +70,7 @@ vi magento2/sharaths.yml
 
 > Save the file **sharaths.yml** and exit from vi editor
 
-###### 2) Start the `Magento2 docker` instance
+##### 2) Start the `Magento2 docker` instance
 
 ```
 docker-compose -f magento2/sharaths.yml up -d
