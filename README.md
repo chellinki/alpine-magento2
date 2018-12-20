@@ -2,7 +2,7 @@
 
                                              Alpine based Docker Magento 
 
-#### `Installation Steps`: For local environments...
+## `Installation Steps`: For local environments...
 
 ##### A) Clone the repository and change to the repo directory
 
@@ -20,7 +20,7 @@ docker-compose -f traefik/docker-compose.yml up -d
 docker-compose -f magento2/sharaths.yml up -d
 ```
 
-#### `Installation Steps`: For production environments...
+## `Installation Steps`: For production environments...
 
 ##### A) Clone the repository and change to the repo directory
 
