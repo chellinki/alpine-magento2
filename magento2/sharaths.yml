@@ -2,7 +2,7 @@ version: '2'
 
 services:
     nginx:
-        image: sharaths/magento-alpine:nginx
+        image: chellinki/alpine-magento:nginx
         restart: always
         labels:
             - traefik.enable=true
@@ -21,7 +21,7 @@ services:
             - network-back
 
     php-fpm:
-        image: sharaths/magento-alpine:php-fpm-7.1
+        image: chellinki/alpine-magento:php-7.1
         restart: always
         volumes:
             - ./public_html:/var/www/html:rw
@@ -34,7 +34,7 @@ services:
             - redis
    
     mysql:
-        image: sharaths/magento-alpine:mysql
+        image: chellinki/alpine-magento:mysql
         restart: always
         volumes:
             - ./database:/var/lib/mysql
@@ -48,7 +48,7 @@ services:
             - network-back
 
     redis:
-        image: sharaths/magento-alpine:redis
+        image: chellinki/alpine-magento:redis
         restart: unless-stopped
         networks:
             - network-back
