@@ -18,8 +18,8 @@ services:
 #        - traefik.frontend.auth.basic=admin:$$apr1$$UcxpPkcC$$aCvQz87xsCykOyBX4wXDR1
      volumes:
         - /var/run/docker.sock:/var/run/docker.sock # So that Traefik can listen to the Docker events
-        - /home/sharaths/test/traefik/traefik.toml:/traefik.toml
-        - /home/sharaths/test/traefik/acme.json:/acme.json
+        - ./traefik.toml:/traefik.toml
+        - ./traefik/acme.json:/acme.json
 networks:
    web:
         external: true
