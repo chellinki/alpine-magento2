@@ -11,6 +11,8 @@ services:
             - traefik.docker.network=web
         volumes:
             - ./public_html:/var/www/html:rw 
+        command: >
+            sh /usr/local/bin/startup.sh
         links:
            - php-fpm
         environment:
