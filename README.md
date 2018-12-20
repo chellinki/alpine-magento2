@@ -11,7 +11,7 @@ git clone https://github.com/chellinki/alpine-magento2.git
 cd alpine-magento2
 ```
 
-#### B) Start the Traefik instance
+#### B) Start the `Traefik` instance
 
 ```
 docker-compose -f traefik/docker-compose.yml up -d
@@ -52,7 +52,7 @@ vi docker-compose.yml
 
 > Save the file **docker-compose.yml** and exit from vi editor
 
-##### 2) Start the Traefik instance
+##### 2) Start the `Traefik` instance
 
 ```
 docker-compose -f traefik/docker-compose.yml up -d
