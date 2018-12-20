@@ -1,6 +1,6 @@
 # Sharath Chandra Sreenidhi - Alpine based Docker Magento
 
-                           Alpine based Docker Magento 
+                                             Alpine based Docker Magento 
 
 #### `Installation Steps`: For local environments...
 
