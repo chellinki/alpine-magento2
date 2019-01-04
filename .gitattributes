@@ -1,2 +1,1 @@
-*.dockerignore    text
-Dockerfile    text
+* linguist-vendored
