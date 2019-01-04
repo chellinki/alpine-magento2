@@ -1,1 +1,2 @@
 *.vcl linguist-vendored=true
+*Dockerfile linguist-vendored=false
