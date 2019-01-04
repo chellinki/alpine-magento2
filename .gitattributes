@@ -1,2 +1,2 @@
 * linguist-vendored
-*.vcl linguist-vendored=false
+*.yml linguist-vendored=true
