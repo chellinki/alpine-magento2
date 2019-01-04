@@ -1,3 +1,4 @@
 * linguist-vendored
 *.vcl linguist-vendored=true
-*.yml linguist-vendored=false
+# *.yml linguist-vendored=false
+Dockerfile    text
