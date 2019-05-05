@@ -21,7 +21,8 @@ services:
             - network-back
 
     php-fpm:
-        image: chellinki/alpine-magento:php-7.1
+#        image: chellinki/alpine-magento:php-7.1
+        image: chellinki/ubuntu-magento:php
         restart: always
         volumes:
             - ./public_html:/var/www/html:rw
